@@ -1,0 +1,39 @@
+// SimpleDemo.java
+
+public class SimpleDemo {
+    
+    public static void main(String[] args) {
+        System.out.println("Welcome to the SimpleDemo program!");
+
+        // Create an instance of the SimpleDemo class
+        SimpleDemo demo = new SimpleDemo();
+
+        // Demonstrate addition
+        int a = 5;
+        int b = 10;
+        int result = demo.add(a, b);
+        System.out.println("The sum of " + a + " and " + b + " is " + result);
+
+        // Demonstrate a loop
+        System.out.println("Counting from 1 to 5:");
+        for (int i = 1; i <= 5; i++) {
+            System.out.println(i);
+        }
+
+        // Call and display the result of a greeting method
+        String name = "Alice";
+        String greeting = demo.getGreeting(name);
+        System.out.println(greeting);
+    }
+
+    // Method to add two integers
+    public int add(int x, int y) {
+        return x + y;
+    }
+
+    // Method to return a greeting message
+    public String getGreeting(String name) {
+        return "Hello, " + name + "!";
+    }
+}
+
